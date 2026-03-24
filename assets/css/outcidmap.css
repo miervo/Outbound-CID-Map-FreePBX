@@ -1,0 +1,36 @@
+/* outcidmap module styles */
+
+#outcidmap-tabs {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#outcidmap-tabs + .tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+#tbl-mappings code {
+    font-size: 13px;
+    color: #c7254e;
+    background: #f9f2f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.label-success {
+    font-size: 12px;
+    padding: 4px 8px;
+    letter-spacing: 0.5px;
+}
+
+.panel {
+    margin-top: 15px;
+}
+
+.pre-scrollable {
+    overflow-y: auto;
+}
