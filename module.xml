@@ -3,8 +3,8 @@
     <rawname>outcidmap</rawname>
     <repo>standard</repo>
     <name>Outbound CID Map</name>
-    <version>1.0.0</version>
-    <publisher>Local</publisher>
+    <version>1.0.1</version>
+    <publisher>Miervo</publisher>
     <license>GPLv3</license>
     <licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
     <description>Подстановка внешних CallerID (CALLERID(num)) для внутренних номеров при исходящих звонках на внешние номера (более 6 цифр). Поддерживает группы: один CallerID для нескольких внутренних номеров.</description>
@@ -19,6 +19,7 @@
         </module>
     </depends>
     <changelog>
+*1.0.1* Search and sortable columns for mappings and groups tables
 *1.0.0* Initial release
     </changelog>
 </module>

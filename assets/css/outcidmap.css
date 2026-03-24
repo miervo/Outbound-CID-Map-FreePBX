@@ -1,4 +1,4 @@
-/* outcidmap module styles */
+/* outcidmap module styles — v1.0.1 */
 
 #outcidmap-tabs {
     margin-top: 15px;
@@ -33,4 +33,54 @@
 
 .pre-scrollable {
     overflow-y: auto;
+}
+
+/* ---- Поиск ---- */
+.ocm-search-wrap {
+    position: relative;
+    max-width: 380px;
+    margin-bottom: 14px;
+}
+
+.ocm-search-wrap .form-control {
+    padding-right: 32px;
+}
+
+.ocm-search-clear {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.ocm-search-clear:hover {
+    color: #666;
+}
+
+/* ---- Сортировка ---- */
+thead th.sortable {
+    white-space: nowrap;
+    user-select: none;
+}
+
+thead th.sortable:hover {
+    background-color: #f0f0f0;
+}
+
+thead th.sortable .ocm-sort-icon {
+    color: #aaa;
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+thead th.sortable .fa-sort-asc,
+thead th.sortable .fa-sort-desc {
+    color: #555;
 }

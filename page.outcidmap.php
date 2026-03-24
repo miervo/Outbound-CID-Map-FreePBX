@@ -231,14 +231,19 @@ if ($action === 'edit_mapping' && !empty($_REQUEST['id'])) {
                   <?php echo _('Маппинги не настроены. Добавьте первый маппинг выше.'); ?>
                 </div>
               <?php else: ?>
+                <div class="ocm-search-wrap">
+                  <input type="text" id="search-mappings" class="form-control"
+                         placeholder="<?php echo _('Поиск по номеру, имени, описанию, CallerID...'); ?>">
+                  <button class="ocm-search-clear" type="button" title="<?php echo _('Очистить'); ?>">&times;</button>
+                </div>
                 <table class="table table-striped table-hover table-bordered" id="tbl-mappings">
                   <thead>
                     <tr>
-                      <th><?php echo _('Внутренний номер'); ?></th>
-                      <th><?php echo _('Имя (из FreePBX)'); ?></th>
-                      <th><?php echo _('Описание'); ?></th>
-                      <th><?php echo _('Группа CallerID'); ?></th>
-                      <th><?php echo _('Внешний CallerID'); ?></th>
+                      <th class="sortable" data-col="0"><?php echo _('Внутренний номер'); ?></th>
+                      <th class="sortable" data-col="1"><?php echo _('Имя (из FreePBX)'); ?></th>
+                      <th class="sortable" data-col="2"><?php echo _('Описание'); ?></th>
+                      <th class="sortable" data-col="3"><?php echo _('Группа CallerID'); ?></th>
+                      <th class="sortable" data-col="4"><?php echo _('Внешний CallerID'); ?></th>
                       <th class="text-center"><?php echo _('Действия'); ?></th>
                     </tr>
                   </thead>
@@ -353,13 +358,18 @@ if ($action === 'edit_mapping' && !empty($_REQUEST['id'])) {
                   <?php echo _('Групп пока нет. Создайте первую группу CallerID выше.'); ?>
                 </div>
               <?php else: ?>
-                <table class="table table-striped table-hover table-bordered">
+                <div class="ocm-search-wrap">
+                  <input type="text" id="search-groups" class="form-control"
+                         placeholder="<?php echo _('Поиск по названию, CallerID, описанию...'); ?>">
+                  <button class="ocm-search-clear" type="button" title="<?php echo _('Очистить'); ?>">&times;</button>
+                </div>
+                <table class="table table-striped table-hover table-bordered" id="tbl-groups">
                   <thead>
                     <tr>
-                      <th><?php echo _('Название группы'); ?></th>
-                      <th><?php echo _('CallerID'); ?></th>
-                      <th><?php echo _('Описание'); ?></th>
-                      <th><?php echo _('Номеров в группе'); ?></th>
+                      <th class="sortable" data-col="0"><?php echo _('Название группы'); ?></th>
+                      <th class="sortable" data-col="1"><?php echo _('CallerID'); ?></th>
+                      <th class="sortable" data-col="2"><?php echo _('Описание'); ?></th>
+                      <th class="sortable" data-col="3"><?php echo _('Номеров в группе'); ?></th>
                       <th class="text-center"><?php echo _('Действия'); ?></th>
                     </tr>
                   </thead>
