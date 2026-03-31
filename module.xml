@@ -22,4 +22,5 @@
 *1.0.1* Search and sortable columns for mappings and groups tables
 *1.0.0* Initial release
     </changelog>
+    <updateurl>https://raw.githubusercontent.com/miervo/outcidmap/main/updater.json</updateurl>
 </module>
