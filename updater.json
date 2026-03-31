@@ -1,0 +1,18 @@
+{
+    "rawname": "outcidmap",
+    "repo": "stable",
+    "name": "Outbound CID Map",
+    "version": "1.0.1",
+    "publisher": "miervo",
+    "license": "GPLv3",
+    "licenselink": "http://www.gnu.org/licenses/gpl-3.0.txt",
+    "changelog": "*1.0.1* Search and sortable columns for mappings and groups tables\n*1.0.0* Initial release",
+    "category": "Other",
+    "description": "Substitutes external CallerID (CALLERID(num)) for internal extensions on outbound calls to external numbers (more than 6 digits). Supports CallerID groups.",
+    "depends": {
+        "version": "16.0"
+    },
+    "location": "https://github.com/miervo/outcidmap/releases/download/v1.0.1/outcidmap.tar.gz",
+    "md5sum": "bb10502216bd7822fcaf98076a482800",
+    "packaged": "1774951994"
+}
